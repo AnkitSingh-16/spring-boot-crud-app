@@ -2,9 +2,14 @@ package com.javaapp.demo.model;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 @Component
+@Entity // if you want to have a class which you want to create a table
 public class Product {
 
+    @Id //this is used to define prodid as primary key
     private int prodId;
     private String prodName;
     private int price;
