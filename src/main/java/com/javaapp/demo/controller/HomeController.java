@@ -15,12 +15,4 @@ public class HomeController {
         return "Welcome to ak page";
     }
 
-    // this method is used to get the csrf token
-    @GetMapping("/csrf-token")
-    public CsrfToken getCsrfToken(HttpServletRequest request) {
-        return (CsrfToken) request.getAttribute("_csrf");
-
-
-    }
-
 }
